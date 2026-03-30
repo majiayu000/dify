@@ -36,7 +36,6 @@ def init_app(app: DifyApp):
                 ValueError,
                 FileNotFoundError,
                 InvokeRateLimitError,
-                _langfuse_error_response,
             ],
             traces_sample_rate=dify_config.SENTRY_TRACES_SAMPLE_RATE,
             profiles_sample_rate=dify_config.SENTRY_PROFILES_SAMPLE_RATE,
